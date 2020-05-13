@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" th:href="@{_css/JeopardyIndexCSS.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{_css/minHeight.css}" media="screen and 
+		(min-height: 190px)">
+		<link rel="stylesheet" type="text/css" th:href="@{_css/maxHeight.css}" media="screen and 
+		(max-height: 189px)">
+
+		<meta charset="ISO-8859-1">
+		<title>Jeopardy - Destiny 2 Edition</title>
+
+	</head>
+
+	<body>
+	
+		<h1 class="banner"><div id="div1">Jeopardy - Destiny 2 Edition</div></h1>
+		<h4 class="banner"><div id="div2">Created By: Derek Schunicke 991295326 &#169</div></h4>
+	
+	<div id="login">
+	
+	<form id="enterName" th:action="@{/pickCatagory}">
+	
+		<div id="nameBanner">Please enter your name:<input type="text" name="name"></div><br><br>
+		<input type="submit" value="Login">
+		
+	</form>
+	
+	</div>
+	
+	</body>
+
+
+</html>

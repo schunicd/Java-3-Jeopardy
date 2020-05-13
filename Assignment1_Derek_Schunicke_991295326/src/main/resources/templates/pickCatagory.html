@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	
+	<head>
+	
+		<meta charset="ISO-8859-1">
+		
+		<link rel="stylesheet" type="text/css" th:href="@{_css/pickCatagoryCSS.css}">
+
+		<title>Jeopardy - Destiny 2 Edition</title>
+	
+	</head>
+	
+	<body>
+	
+		<div id="parent">
+		
+			<h1 class="banner" id="welcome" th:text="'Player: ' + ${session.player.name}"></h1>	
+			<h1 class="banner" id="winnings" th:text="'Winnings: $' + ${session.player.score}"></h1>
+	
+			<h4 class="catagories" id="lastWish0">Last Wish Raid</h4>
+			<h4 class="catagories" id="CoS0">Crown of Sorrows Raid</h4>
+			<h4 class="catagories" id="weap0">Primary Weapons</h4>
+			<h4 class="catagories" id="specialHeavy0">Special and Heavy Weapons</h4>
+			<h4 class="catagories" id="shadowkeep0">Shadowkeep Expansion</h4>
+			
+			<div class="top1" id="lastWish1" th:if="@{Question.}"><a th:href="@{/answerQuestion?category=Last Wish Raid&value=100}">
+			<img class="questionBlocks" th:src="@{_images/question1.jpg}"></a></div>
+			<div class="top2" id="lastWish2"><a th:href="@{/answerQuestion?category=Last Wish Raid&value=200}">
+			<img class="questionBlocks" th:src="@{_images/question2.jpg}"></a></div>
+			<div class="mid" id="lastWish3"><a th:href="@{/answerQuestion?category=Last Wish Raid&value=300}">
+			<img class="questionBlocks" th:src="@{_images/question3.jpg}"></a></div>
+			<div class="bottom1" id="lastWish4"><a th:href="@{/answerQuestion?category=Last Wish Raid&value=400}">
+			<img class="questionBlocks" th:src="@{_images/question4.jpg}"></a></div>
+			<div class="bottom2" id="lastWish5"><a th:href="@{/answerQuestion?category=Last Wish Raid&value=500}">
+			<img class="questionBlocks" th:src="@{_images/question5.jpg}"></a></div>
+			
+			<div class="top1" id="CoS1"><a th:href="@{/answerQuestion?category=Crown of Sorrows Raid&value=100}">
+			<img class="questionBlocks" th:src="@{_images/question1.jpg}"></a></div>
+			<div class="top2" id="CoS2"><a th:href="@{/answerQuestion?category=Crown of Sorrows Raid&value=200}">
+			<img class="questionBlocks" th:src="@{_images/question2.jpg}"></a></div>
+			<div class="mid" id="CoS3"><a th:href="@{/answerQuestion?category=Crown of Sorrows Raid&value=300}">
+			<img class="questionBlocks" th:src="@{_images/question3.jpg}"></a></div>
+			<div class="bottom1" id="CoS4"><a th:href="@{/answerQuestion?category=Crown of Sorrows Raid&value=400}">
+			<img class="questionBlocks" th:src="@{_images/question4.jpg}"></a></div>
+			<div class="bottom2" id="CoS5"><a th:href="@{/answerQuestion?category=Crown of Sorrows Raid&value=500}">
+			<img class="questionBlocks" th:src="@{_images/question5.jpg}"></a></div>
+			
+			<div class="top1" id="weap1"><a th:href="@{/answerQuestion?category=Primary Weapons&value=100}">
+			<img class="questionBlocks" th:src="@{_images/question1.jpg}"></a></div>
+			<div class="top2" id="weap2"><a th:href="@{/answerQuestion?category=Primary Weapons&value=200}">
+			<img class="questionBlocks" th:src="@{_images/question2.jpg}"></a></div>
+			<div class="mid" id="weap3"><a th:href="@{/answerQuestion?category=Primary Weapons&value=300}">
+			<img class="questionBlocks" th:src="@{_images/question3.jpg}"></a></div>
+			<div class="bottom1" id="weap4"><a th:href="@{/answerQuestion?category=Primary Weapons&value=400}">
+			<img class="questionBlocks" th:src="@{_images/question4.jpg}"></a></div>
+			<div class="bottom2" id="weap5"><a th:href="@{/answerQuestion?category=Primary Weapons&value=500}">
+			<img class="questionBlocks" th:src="@{_images/question5.jpg}"></a></div>
+			
+			<div class="top1" id="specialHeavy1">
+			<a th:href="@{/answerQuestion?category=Special and Heavy Weapons&value=100}">
+			<img class="questionBlocks" th:src="@{_images/question1.jpg}"></a></div>
+			<div class="top2" id="specialHeavy2">
+			<a th:href="@{/answerQuestion?category=Special and Heavy Weapons&value=200}">
+			<img class="questionBlocks" th:src="@{_images/question2.jpg}"></a></div>
+			<div class="mid" id="specialHeavy3">
+			<a th:href="@{/answerQuestion?category=Special and Heavy Weapons&value=300}">
+			<img class="questionBlocks" th:src="@{_images/question3.jpg}"></a></div>
+			<div class="bottom1" id="specialHeavy4">
+			<a th:href="@{/answerQuestion?category=Special and Heavy Weapons&value=400}">
+			<img class="questionBlocks" th:src="@{_images/question4.jpg}"></a></div>
+			<div class="bottom2" id="specialHeavy5">
+			<a th:href="@{/answerQuestion?category=Special and Heavy Weapons&value=500}">
+			<img class="questionBlocks" th:src="@{_images/question5.jpg}"></a></div>
+			
+			<div class="top1" id="shadowkeep1"><a th:href="@{/answerQuestion?category=Shadowkeep Expansion&value=100}">
+			<img class="questionBlocks" th:src="@{_images/question1.jpg}"></a></div>
+			<div class="top2" id="shadowkeep2"><a th:href="@{/answerQuestion?category=Shadowkeep Expansion&value=200}">
+			<img class="questionBlocks" th:src="@{_images/question2.jpg}"></a></div>
+			<div class="mid" id="shadowkeep3"><a th:href="@{/answerQuestion?category=Shadowkeep Expansion&value=300}">
+			<img class="questionBlocks" th:src="@{_images/question3.jpg}"></a></div>
+			<div class="bottom1" id="shadowkeep4"><a th:href="@{/answerQuestion?category=Shadowkeep Expansion&value=400}">
+			<img class="questionBlocks" th:src="@{_images/question4.jpg}"></a></div>
+			<div class="bottom2" id="shadowkeep5"><a th:href="@{/answerQuestion?category=Shadowkeep Expansion&value=500}">
+			<img class="questionBlocks" th:src="@{_images/question5.jpg}"></a></div>
+		
+		</div>
+			
+		<script type="text/javascript" th:src="@{_script/disableButtons.js}"></script>
+			
+	</body>
+
+</html>

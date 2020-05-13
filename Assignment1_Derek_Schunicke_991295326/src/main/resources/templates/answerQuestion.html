@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+	
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" type="text/css" th:href="@{_css/answerQuestion.css}">
+		
+		<title>Question Page</title>
+	
+	</head>
+	
+	<body>
+	
+		<div id="parent">
+	
+			<div class="banner" id="catagory">
+			<div class="visible"><h1 th:text="'Category: ' + ${session.question.category}"></h1></div></div>
+			<div class="banner" id="value">
+			<div class="visible"><h1 th:text="'Question Value: ' + ${session.question.value}"></h1></div></div>
+			<div id="question"><div class="visible"><h2 th:text="${session.question.question}"></h2></div></div>
+	 		 
+	 		<form action="evaluateQuestion" id="answers"  class="container">
+	 		
+				<div id="answer1"><label class="visible">
+				<input type="radio" name="answer" th:value="${session.question.answer1}" 
+				th:text="${session.question.answer1}"></label></div>
+				
+				<div id="answer2"><label class="visible">
+				<input type="radio" name="answer" th:value="${session.question.answer2}" 
+				th:text="${session.question.answer2}"></label></div>
+				
+				<div id="answer3"><label class="visible">
+				<input type="radio" name="answer" th:value="${session.question.answer3}" 
+				th:text="${session.question.answer3}"></label></div>
+				
+				<div id="answer4"><label class="visible">
+				<input type="radio" name="answer" th:value="${session.question.answer4}" 
+				th:text="${session.question.answer4}"></label></div>
+		
+				<br>
+				
+				<div id="answerBtn"><input type="SUBMIT" value="Submit Answer"></div>
+	
+			</form>
+	
+			
+	
+		</div>
+	
+	</body>
+
+</html>

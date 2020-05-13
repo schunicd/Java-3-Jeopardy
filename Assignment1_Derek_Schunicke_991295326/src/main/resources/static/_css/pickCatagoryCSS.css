@@ -1,0 +1,173 @@
+@charset "ISO-8859-1";
+
+#parent{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"welcome welcome winnings winnings winnings" 
+	"lastWish0 CoS0 weap0 specialHeavy0 shadowkeep0"
+	"lastWish1 CoS1 weap1 specialHeavy1 shadowkeep1"
+	"lastWish2 CoS2 weap2 specialHeavy2 shadowkeep2"
+	"lastWish3 CoS3 weap3 specialHeavy3 shadowkeep3"
+	"lastWish4 CoS4 weap4 specialHeavy4 shadowkeep4"
+	"lastWish5 CoS5 weap5 specialHeavy5 shadowkeep5";
+}
+
+body{
+	background-image: url("../_images/pickCatagoryBackground.jpg");
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.6);
+	background-blend-mode: lighten;
+	
+	-webkit-animation: backgroundFade 10s;
+         -o-animation: backgroundFade 10s;
+            animation: backgroundFade 10s;
+}
+
+@-webkit-keyframes backgroundFade{
+	0% {background-color: rgba(255,255,255,0);}
+	100% {background-color: rgba(255,255,255,0.6);}
+}
+
+@-o-keyframes backgroundFade{
+	0% {background-color: rgba(255,255,255,0);}
+	100% {background-color: rgba(255,255,255,0.6);}
+}
+
+@keyframes backgroundFade{
+	0% {background-color: rgba(255,255,255,0);}
+	100% {background-color: rgba(255,255,255,0.6);}
+}
+
+#welcome{grid-area: welcome;}
+
+#winnings{grid-area: winnings;}
+
+.banner{
+	font-weight: bold;
+	position: relative;
+	color: rgba(153, 0, 204);
+	text-align: center;
+	border-bottom: 2px solid rgb(153, 0, 204);
+}
+
+#lastWish0{grid-area: lastWish0;}
+#CoS0{grid-area: CoS0;}
+#primary0{grid-area: primary0;}
+#specialHeavy0{grid-area: specialHeavy0;}
+#shadowkeep0{
+	grid-area: shadowkeep0; 
+	border-right: 2px solid rgb(153, 0, 204);
+}
+
+.catagories{
+	font-weight: bold;
+	text-decoration: underline;
+	display: inline-block;
+	color: rgb(153, 0, 204);
+	background-color: rgba(255,255,255,0.6);
+	text-align: center;
+	border-left: 2px solid rgb(153, 0, 204);
+	padding: 10px;
+}
+
+#lastWish1{grid-area: lastWish1;}
+#lastWish2{grid-area: lastWish2;}
+#lastWish3{grid-area: lastWish3;}
+#lastWish4{grid-area: lastWish4;}
+#lastWish5{grid-area: lastWish5;}
+
+#CoS1{grid-area: CoS1;}
+#CoS2{grid-area: CoS2;}
+#CoS3{grid-area: CoS3;}
+#CoS4{grid-area: CoS4;}
+#CoS5{grid-area: CoS5;}
+
+#weap1{grid-area: weap1;}
+#weap2{grid-area: weap2;}
+#weap3{grid-area: weap3;}
+#weap4{grid-area: weap4;}
+#weap5{grid-area: weap5;}
+
+#specialHeavy1{grid-area: specialHeavy1;}
+#specialHeavy2{grid-area: specialHeavy2;}
+#specialHeavy3{grid-area: specialHeavy3;}
+#specialHeavy4{grid-area: specialHeavy4;}
+#specialHeavy5{grid-area: specialHeavy5;}
+
+#shadowkeep1{grid-area: shadowkeep1;}
+#shadowkeep2{grid-area: shadowkeep2;}
+#shadowkeep3{grid-area: shadowkeep3;}
+#shadowkeep4{grid-area: shadowkeep4;}
+#shadowkeep5{grid-area: shadowkeep5;}
+
+.questionBlocks{
+	display: inline-block; 
+	margin-bottom: 5px;
+}
+
+.top1{
+	-webkit-animation: blocksFade 4s;
+       -moz-animation: blocksFade 4s;
+        -ms-animation: blocksFade 4s;
+         -o-animation: blocksFade 4s;
+            animation: blocksFade 4s;
+}
+
+.top2{
+	-webkit-animation: blocksFade 5s;
+       -moz-animation: blocksFade 5s;
+        -ms-animation: blocksFade 5s;
+         -o-animation: blocksFade 5s;
+            animation: blocksFade 5s;
+}
+
+.mid{
+	-webkit-animation: blocksFade 6s;
+       -moz-animation: blocksFade 6s;
+        -ms-animation: blocksFade 6s;
+         -o-animation: blocksFade 6s;
+            animation: blocksFade 6s;
+}
+
+.bottom1{
+	-webkit-animation: blocksFade 7s;
+       -moz-animation: blocksFade 7s;
+        -ms-animation: blocksFade 7s;
+         -o-animation: blocksFade 7s;
+            animation: blocksFade 7s;
+}
+
+.bottom2{
+	-webkit-animation: blocksFade 8s;
+       -moz-animation: blocksFade 8s;
+        -ms-animation: blocksFade 8s;
+         -o-animation: blocksFade 8s;
+            animation: blocksFade 8s;
+}
+
+@-webkit-keyframes blocksFade{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-moz-keyframes blocksFade{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-ms-keyframes blocksFade{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-o-keyframes blocksFade{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes blocksFade{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}

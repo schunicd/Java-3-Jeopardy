@@ -1,0 +1,127 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("../_images/indexWallpaper.jpg");
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.6);
+	background-blend-mode: lighten;
+	
+	-webkit-animation: backgroundFade 10s;
+         -o-animation: backgroundFade 10s;
+            animation: backgroundFade 10s;
+}
+
+@-webkit-keyframes backgroundFade{
+	0% {background-color: rgba(255,255,255,0);}
+	100% {background-color: rgba(255,255,255,0.6);}
+}
+
+@-o-keyframes backgroundFade{
+	0% {background-color: rgba(255,255,255,0);}
+	100% {background-color: rgba(255,255,255,0.6);}
+}
+
+@keyframes backgroundFade{
+	0% {background-color: rgba(255,255,255,0);}
+	100% {background-color: rgba(255,255,255,0.6);}
+}
+
+.banner{
+	font-weight: bold;
+	position: relative;
+	color: rgb(153, 0, 204);
+	text-align: center;
+}
+
+#div1{
+	background-color: rgba(255,255,255,0.4);
+    position: relative;
+    display: inline-block;
+	-webkit-animation: bannerLoading 3s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation: bannerLoading 3s;
+	-moz-animation-timing-function: linear;
+	-ms-animation: bannerLoading 3s;
+	-ms-animation-timing-function: linear;
+	-o-animation: bannerLoading 3s;
+	-o-animation-timing-function: linear;
+	animation: bannerLoading 3s;
+	animation-timing-function: linear;
+}
+
+#div2{
+	background-color: rgba(255,255,255,0.4);
+    position: relative;
+    display: inline-block;
+	-webkit-animation: bannerLoading 3s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation: bannerLoading 3s;
+	-moz-animation-timing-function: linear;
+	-ms-animation: bannerLoading 3s;
+	-ms-animation-timing-function: linear;
+	-o-animation: bannerLoading 3s;
+	-o-animation-timing-function: linear;
+	animation: bannerLoading 3s;
+	animation-timing-function: linear;
+}
+
+@-moz-keyframes bannerLoading{
+	from {top: -100px;}
+	to {top: 0px;}
+}
+
+@-ms-keyframes bannerLoading{
+	from {top: -100px;}
+	to {top: 0px;}
+}
+
+@-o-keyframes bannerLoading{
+	from {top: -100px;}
+	to {top: 0px;}
+}
+
+@keyframes bannerLoading{
+  from {top: -100px;}
+  to {top: 0px;}
+}
+
+#nameBanner{
+	background-color: rgba(255,255,255,0.4);
+    position: relative;
+    display: inline-block;
+	color: rgb(153, 0, 204);
+	font-weight: bold;
+}
+
+#enterName{
+	-webkit-animation: loginLoading 10s;
+       -moz-animation: loginLoading 10s;
+        -ms-animation: loginLoading 10s;
+         -o-animation: loginLoading 10s;
+            animation: loginLoading 10s;
+}
+
+@-webkit-keyframes loginLoading{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes loginLoading{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-ms-keyframes loginLoading{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-o-keyframes loginLoading{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes loginLoading{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}

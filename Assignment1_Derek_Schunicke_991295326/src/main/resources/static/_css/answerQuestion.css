@@ -1,0 +1,95 @@
+body{
+	background-image: url("../_images/lwQuestion1.jpg");
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.6);
+	background-blend-mode: lighten;
+}
+
+#parent{
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"catagory catagory value value" 
+	"question question question question"
+	". answers answers ."
+	". answers answers ."
+	". answers answers .";
+}
+
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"answer1 answer2"
+	"answer3 answer4"
+	"answerBtn answerBtn";
+}
+
+#catagory{
+	grid-area: catagory; 
+	border-right: 2px solid rgb(153, 0, 204);
+}
+	
+#value{
+	grid-area: value; 
+	border-left: 2px solid rgb(153, 0, 204);
+}
+
+#question{
+	grid-area: question;
+	color: rgb(153, 0, 204);
+	margin-bottom: 80px;
+	border-bottom: 2px dotted rgb(153, 0, 204);
+}
+
+.banner{
+	color: rgb(153, 0, 204);
+	top: -20px;
+	border-bottom: 2px solid rgb(153, 0, 204);
+}
+
+.visible{
+	position: relative;
+	display: inline-block;
+	background-color: rgba(255,255,255,0.3);
+}
+
+#answers{grid-area: answers;}
+
+#answer1{
+	grid-area: answer1; 
+	margin-right:20px; 
+	margin-bottom: 20px;
+}
+
+#answer2{
+	grid-area: answer2; 
+	margin-left: 20px; 
+	margin-bottom: 20px;
+}
+
+#answer3{
+	grid-area: answer3; 
+	margin-right:20px;
+}
+
+#answer4{
+	grid-area: answer4; 
+	margin-left: 20px;
+}
+
+#answerBtn{
+	grid-area: answerBtn;
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.container {
+	color: rgb(153, 0, 204);
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 22px;
+}
